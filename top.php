@@ -98,7 +98,7 @@ if($mypage=='product.php'){
                         <div class="menumenu__container clearfix">
                             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
                                 <div class="logo">
-                                     <a href="index.php">E-kart</a>
+                                     <a href="index.php" class="h2">E-kart</a>
                                 </div>
                             </div>
                             <div class="col-md-7 col-lg-6 col-sm-5 col-xs-3">
@@ -192,7 +192,6 @@ if($mypage=='product.php'){
 													</a>
 													<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 													  <a class="dropdown-item" href="my_order.php">Order</a>
-													  <a class="dropdown-item" href="profile.php">Profile</a>
 													  <div class="dropdown-divider"></div>
 													  <a class="dropdown-item" href="logout.php">Logout</a>
 													</div>

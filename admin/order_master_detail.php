@@ -2,13 +2,7 @@
 require('top.inc.php');
 isAdmin();
 $order_id=get_safe_value($con,$_GET['id']);
-//$coupon_details=mysqli_fetch_assoc(mysqli_query($con,"select coupon_value,coupon_code from `order` where id='$order_id'"));
 
-/*$coupon_value=$coupon_details['coupon_value'];
-if($coupon_value==''){
-	$coupon_value=0;
-}
-$coupon_code=$coupon_details['coupon_code'];*/
 if(isset($_POST['update_order_status'])){
 	$update_order_status=$_POST['update_order_status'];
 	
@@ -66,7 +60,7 @@ if(isset($_POST['update_order_status'])){
 										
 									</tr>
 									<?php } 
-									//if($coupon_value!=''){
+							
 									?>
 									
 									<?php  ?>
@@ -101,16 +95,7 @@ if(isset($_POST['update_order_status'])){
 										}
 										?>
 									</select>
-									<div id="shipped_box" style="display:none">
-										<table>
-											<tr>
-												<td><input type="text" class="form-control" name="length" placeholder="length"/></td>
-												<td><input type="text" class="form-control" name="breadth" placeholder="Breadth"/></td>
-												<td><input type="text" class="form-control" name="height" placeholder="height"/></td>
-												<td><input type="text" class="form-control" name="weight" placeholder="weight"/></td>
-											</tr>
-										</table>
-									</div>
+									
 									<input type="submit" class="form-control"/>
 								</form>
 							</div>
@@ -123,13 +108,7 @@ if(isset($_POST['update_order_status'])){
 	</div>
 </div>
 <script>
-function select_status(){
-	var update_order_status=jQuery('#update_order_status').val();
-	if(update_order_status==3){
-		jQuery('#shipped_box').show();
-	}
-}
-</script>
+
 <?php
 require('footer.inc.php');
 ?>
